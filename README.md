@@ -14,22 +14,16 @@ If you want to rename a Python package that you have published on [PyPI](https:/
 
 This cookiecutter template helps create that final release under the old name.
 
-## Installation
-
-You'll need to have [cookiecutter](https://cookiecutter.readthedocs.io/) installed. I recommend [pipx](https://pipxproject.github.io/pipx/) for this:
-
-    pipx install cookiecutter
-
-Regular `pip` will work OK too.
-
 ## Usage
 
-Run `cookiecutter gh:simonw/pypi-rename` and then answer the prompts. Here's an example run:
+I recommend [uvx](https://docs.astral.sh/uv/) to use this template via `cookiecutter` and then answer the prompts. Here's an example run:
 
-    $ cookiecutter gh:simonw/pypi-rename
+    $ uvx cookiecutter gh:simonw/pypi-rename 
     new_package_name []: my-old-package-name
     old_package_name []: my-new-package-name
     old_package_new_version []: 0.2
+
+(Alternatively, install [cookiecutter](https://cookiecutter.readthedocs.io/) with [pipx](https://pipxproject.github.io/pipx/): `pipx install cookiecutter`. Regular `pip` will work OK too.)
 
 For `old_package_new_version` you should enter a version that is higher than the most recent version that was published for the package which you are renaming.
 
@@ -47,7 +41,7 @@ This will display a README on PyPI explaining that the module has been renamed, 
 
 Here's an example run, first creating the package using `cookiecutter` and `python -m build`:
 ```bash
-% cookiecutter gh:simonw/pypi-rename
+% uvx cookiecutter gh:simonw/pypi-rename
   [1/3] new_package_name (): click-default-group
   [2/3] old_package_name (): click-default-group-wheel
   [3/3] old_package_new_version (): 1.2.3
