@@ -18,7 +18,7 @@ This cookiecutter template helps create that final release under the old name.
 
 I recommend [uvx](https://docs.astral.sh/uv/) to use this template via [cookiecutter](https://cookiecutter.readthedocs.io/) and then answer the prompts.
 
-Alternatively, install cookiecutter with `uv tool install cookiecutter`. Regular `pip` will work OK too.
+(Alternatively, install cookiecutter with `uv tool install cookiecutter`. Regular `pip` will work OK too.)
 
 Here's an example run:
 
