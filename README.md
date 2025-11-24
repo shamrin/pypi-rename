@@ -16,14 +16,14 @@ This cookiecutter template helps create that final release under the old name.
 
 ## Usage
 
-I recommend [uvx](https://docs.astral.sh/uv/) to use this template via `cookiecutter` and then answer the prompts. Here's an example run:
+I recommend [uvx](https://docs.astral.sh/uv/) to use this template via [cookiecutter](https://cookiecutter.readthedocs.io/) and then answer the prompts. Here's an example run:
 
     $ uvx cookiecutter gh:simonw/pypi-rename 
     new_package_name []: my-old-package-name
     old_package_name []: my-new-package-name
     old_package_new_version []: 0.2
 
-(Alternatively, install [cookiecutter](https://cookiecutter.readthedocs.io/) with [pipx](https://pipxproject.github.io/pipx/): `pipx install cookiecutter`. Regular `pip` will work OK too.)
+(Alternatively, install [cookiecutter](https://cookiecutter.readthedocs.io/) with : `uv tool install cookiecutter`. Regular `pip` will work OK too.)
 
 For `old_package_new_version` you should enter a version that is higher than the most recent version that was published for the package which you are renaming.
 
