@@ -23,7 +23,7 @@ I recommend [uvx](https://docs.astral.sh/uv/) to use this template via [cookiecu
     old_package_name []: my-new-package-name
     old_package_new_version []: 0.2
 
-(Alternatively, install [cookiecutter](https://cookiecutter.readthedocs.io/) with : `uv tool install cookiecutter`. Regular `pip` will work OK too.)
+(Alternatively, install cookiecutter with `uv tool install cookiecutter`. Regular `pip` will work OK too.)
 
 For `old_package_new_version` you should enter a version that is higher than the most recent version that was published for the package which you are renaming.
 
